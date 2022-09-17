@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(src/Fundo.jpg);
+    background-color: #121214;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.profileImage {
+    width: 120px;
+    background-color: black;
+    
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header {
+    display: flex;
+    margin: 32px auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 120px;
+    padding: 4px;
+}
+
+.header:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 580px;
+    
+    margin-top: 4px;
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    background-color: #443E54;
+}
+
+@media (max-width: 650px) {
+    .card {
+        max-width: 400px;
+    }
+}
+
+.bg-color {
+    padding: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-color: #443E54;
+
+    margin-bottom: 20px;
+}
+
+.card > h2 {
+    padding: 2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: sans-serif;
+    color: white;
+}
+
+.card > p {
+    padding: 4px;
+    color: #A1A1AA;
+    font-family: sans-serif;
+    margin-bottom: 24px;
+}
+
+.align-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-cards > li {
+    list-style: none;
+}
+
+.front-cover {
+    width: 90px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.front-cover-profile {
+    margin-right: 16px;
+    border: 1px solid #121214;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.front-cover:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.front-cover-profile:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.logo-social-media {
+    border-radius: 100%;
+    margin-right: 16px;
+    
+}
+
+.logo-social-media:hover {
+    scale: 1.1;
+    transition: 1s;
+}
